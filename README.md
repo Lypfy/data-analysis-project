@@ -9,19 +9,13 @@ Project dùng để đọc dữ liệu CSV/Excel, xử lý, phân tích và tr�
 ## Cấu trúc thư mục
 
 data-analysis-project/
-    data/ # Thư mục lưu dữ liệu (được giữ lại khi clone repo)
-
-    original_data/ # Dữ liệu gốc ban đầu
-
-    src/ # Chứa source code
-
-    main.py # File chạy chính của chương trình
-
-    requirements.txt # Danh sách thư viện cần cài đặt
-
-    README.md # Tài liệu hướng dẫn
-    
-    .gitignore # File cấu hình Git ignore
+data/ # Thư mục lưu dữ liệu
+original_data/ # Dữ liệu gốc ban đầu
+src/ # Chứa source code
+main.py # File chạy chính của chương trình
+requirements.txt # Danh sách thư viện cần cài đặt
+README.md # Tài liệu hướng dẫn
+.gitignore # File cấu hình Git ignore
 
 
 **Lưu ý**:
@@ -54,7 +48,7 @@ pip install -r requirements.txt
 
 ## Cách chạy chương trình
 
-Sau khi cài đặt đầy đủ thư viện, chạy chương trình bằng lệnh: (hoặc chạy file python)
+Sau khi cài đặt đầy đủ thư viện, chạy chương trình bằng lệnh: (hoặc chạy file main.py)
 
 ```bash
 python main.py
