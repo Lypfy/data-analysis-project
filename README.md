@@ -1,7 +1,7 @@
 # Data Analysis Project (Python)
 
 ## Giới thiệu
-Đây là project phân tích dữ liệu sử dụng **Python**, với các thư viện phổ biến như **Pandas**, **Matplotlib** và **OpenPyXL**.  
+Đây là project phân tích dữ liệu hành khác trên tàu Titanic sử dụng **Python**, với các thư viện phổ biến như **Pandas**, **Matplotlib** và **OpenPyXL**.  
 Project dùng để đọc dữ liệu CSV/Excel, xử lý, phân tích và trực quan hóa dữ liệu.
 
 ---
