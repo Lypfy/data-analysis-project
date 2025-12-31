@@ -8,14 +8,18 @@ Project dùng để đọc dữ liệu CSV/Excel, xử lý, phân tích và tr�
 
 ## Cấu trúc thư mục
 
+```text
 data-analysis-project/
-data/ # Thư mục lưu dữ liệu
-original_data/ # Dữ liệu gốc ban đầu
-src/ # Chứa source code
-main.py # File chạy chính của chương trình
-requirements.txt # Danh sách thư viện cần cài đặt
-README.md # Tài liệu hướng dẫn
-.gitignore # File cấu hình Git ignore
+├── data/                   # Thư mục lưu dữ liệu
+├── original_data/          # Dữ liệu gốc ban đầu
+│   └── titanic.csv         # File csv gốc
+│   └── titanic.xlsx        # File excel gốc
+├── src/                    # Chứa source code
+├── main.py                 # File chạy chính của chương trình
+├── requirements.txt        # Danh sách thư viện cần cài đặt
+├── README.md               # Tài liệu hướng dẫn
+└── .gitignore              # File cấu hình Git ignore
+```
 
 
 **Lưu ý**:
