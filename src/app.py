@@ -11,6 +11,8 @@ from .data_handler import DataHandler
 from .ui_components import UIComponents
 from .visualizer import Visualizer
 
+import os
+
 
 class DynamicDataApp:
     """Lớp chính của ứng dụng quản lý dữ liệu động"""
@@ -63,7 +65,8 @@ class DynamicDataApp:
             
             # Cập nhật label trạng thái
             self.ui.update_status_label(
-                f"Đang mở: {file_path.split('/')[-1]}", 
+                #f"Đang mở: {file_path.split('/')[-1]}",
+                f"Đang mở: {os.path.basename(file_path)}",
                 "green"
             )
 
