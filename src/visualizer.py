@@ -62,7 +62,7 @@ class Visualizer:
             selected = chart_type.get()  # Lấy giá trị được chọn
             if selected:
                 self.plot_selected_chart(selected)  # Vẽ biểu đồ
-                popup.destroy()  # Đóng popup
+                #popup.destroy()  # Đóng popup, có thể đóng nếu muốn
         
         # Nút vẽ biểu đồ
         ttk.Button(
