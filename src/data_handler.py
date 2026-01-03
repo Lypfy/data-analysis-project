@@ -126,6 +126,7 @@ class DataHandler:
         filepath = os.path.join(self.data_dir, filename)
         
         # Lấy đuôi file (extension) để kiểm tra: .csv hay .xlsx/.xls
+        # file_extension sẽ lấy đuôi .csv... và chuyển các ký tự thành in thường
         _, file_extension = os.path.splitext(filename)
         file_extension = file_extension.lower()
         
@@ -188,7 +189,7 @@ class DataHandler:
             if col in data.columns:
                 data[col] = data[col].fillna("no_info")
         
-        """Hàm loại bỏ các bản ghi trùng lặp dựa PassengerId và trả về DataFrame đã được làm sạch"""
+        #Hàm loại bỏ các bản ghi trùng lặp dựa PassengerId và trả về DataFrame đã được làm sạch
         data = data.drop_duplicates(subset=['PassengerId'], keep='first') 
 
         # Định dạng cột Sex thành chữ thường

@@ -66,6 +66,7 @@ class DynamicDataApp:
             # Cập nhật label trạng thái
             self.ui.update_status_label(
                 #f"Đang mở: {file_path.split('/')[-1]}",
+                #Dùng basename để tránh trường hợp đường dẫn dùng dấu khác
                 f"Đang mở: {os.path.basename(file_path)}",
                 "green"
             )
