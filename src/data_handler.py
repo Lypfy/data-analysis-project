@@ -169,11 +169,11 @@ class DataHandler:
                 # Điền giá trị thiếu bằng 0
                 data[col] = data[col].fillna(0)
 
-        # Danh sách các cột cần điền giá trị trung bình (Hàm median tự động bỏ qua NaN)
+        # Danh sách các cột cần điền giá trị trung vị (Hàm median tự động bỏ qua NaN)
         columns_mean = ['Age', 'Fare']
         for col in columns_mean:
             if col in data.columns:
-                data[col] = data[col].fillna(data[col].mean())
+                data[col] = data[col].fillna(data[col].median())
 
         # Danh sách các cột điền giá trị phổ biến nhất     
         columns_mode = ['Pclass', 'Embarked']
