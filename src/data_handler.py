@@ -170,8 +170,8 @@ class DataHandler:
                 data[col] = data[col].fillna(0)
 
         # Danh sách các cột cần điền giá trị trung vị (Hàm median tự động bỏ qua NaN)
-        columns_mean = ['Age', 'Fare']
-        for col in columns_mean:
+        columns_median = ['Age', 'Fare']
+        for col in columns_median:
             if col in data.columns:
                 data[col] = data[col].fillna(data[col].median())
 
