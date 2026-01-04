@@ -149,6 +149,8 @@ class Visualizer:
         plt.figure(figsize=(10, 6))
         # fill=True để tô màu vùng dưới đường cong
         sns.kdeplot(data=self.df, x='Age', hue='Survived', fill=True, palette='crest')
+        #có thể dùng clip để cắt đi phần rìa (dưới 0 tuổi và trên 80 tuổi) nhưng sẽ đánh đổi về mặt chính xác toán học
+        #sns.kdeplot(data=self.df, x='Age', hue='Survived', fill=True, palette='crest', clip=(0, 80))
         plt.title('Phân phối Độ tuổi: Nhóm Sống sót vs Thiệt mạng')
         plt.xlabel('Tuổi')
         plt.ylabel('Mật độ')
