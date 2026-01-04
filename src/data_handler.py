@@ -173,7 +173,7 @@ class DataHandler:
         columns_mean = ['Age', 'Fare']
         for col in columns_mean:
             if col in data.columns:
-                data[col] = data[col].fillna(data[col].median())
+                data[col] = data[col].fillna(data[col].mean())
 
         # Danh sách các cột điền giá trị phổ biến nhất     
         columns_mode = ['Pclass', 'Embarked']
